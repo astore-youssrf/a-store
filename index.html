@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>أكاديمية تعلم البرمجه والهاكر-YOUSSEF TURKI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Cairo', sans-serif;
+      background: #0a0000;
+      color: #fff;
+      line-height: 1.8;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: radial-gradient(circle, rgba(204, 0, 0, 0.15) 1px, transparent 1px);
+      background-size: 20px 20px;
+      animation: bloodFlow 30s linear infinite;
+      z-index: 0;
+    }
+
+    @keyframes bloodFlow {
+      from { background-position: 0 0; }
+      to { background-position: 1000px 1000px; }
+    }
+
+    header, nav, .hero, .courses, footer {
+      position: relative;
+      z-index: 1;
+    }
+
+    header {
+      background-color: #1a0000;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 2px solid #cc0000;
+    }
+
+    header h1, header h4 {
+      color: #ff0000;
+      font-size: 2.5em;
+      text-shadow: 0 0 10px #cc0000;
+      animation: redGlow 2s ease-in-out infinite alternate;
+    }
+
+    nav {
+      background-color: #330000;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ff3333;
+      text-shadow: 0 0 10px #ff0000;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+      background: #220000;
+    }
+
+    .hero h2 {
+      font-size: 2.2em;
+      color: #ff3333;
+      margin-bottom: 10px;
+      animation: redGlow 3s ease-in-out infinite alternate;
+    }
+
+    .hero p {
+      color: #ddd;
+      font-size: 1.2em;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .courses {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .course {
+      background: #1a0000;
+      border: 1px solid #cc0000;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 15px #cc000055;
+      transition: transform 0.4s ease, box-shadow 0.4s;
+    }
+
+    .course:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #ff0000;
+    }
+
+    .course img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .course-content {
+      padding: 15px;
+    }
+
+    .course h3 {
+      color: #ff3333;
+      font-size: 1.3em;
+      margin-bottom: 10px;
+    }
+
+    .course p {
+      color: #eee;
+      font-size: 0.95em;
+    }
+
+    .price {
+      margin: 10px 0;
+      color: #fff;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      text-align: center;
+      background-color: #cc0000;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      font-size: 1em;
+      border-radius: 0 0 10px 10px;
+      transition: background 0.3s, box-shadow 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #990000;
+      box-shadow: 0 0 12px #ff0000;
+    }
+
+    footer {
+      background: #1a0000;
+      text-align: center;
+      color: #999;
+      padding: 20px;
+      font-size: 14px;
+      border-top: 1px solid #cc0000;
+    }
+
+    @keyframes redGlow {
+      from { text-shadow: 0 0 5px #cc0000; }
+      to { text-shadow: 0 0 20px #ff0000, 0 0 30px #990000; }
+    }
+  </style>
+</head>
+<body>
+  <header data-aos="fade-down">
+    <h4>أكاديمية YOUSSEF MOHAMED</h4>
+  </header>
+  
+  <nav data-aos="fade-up">
+    <a href="https://wa.me/+201061602509">تواصل وتساب</a>
+    <a href="https://t.me/YOUSSEF_TRKE">تواصل تيليجرام</a>
+  </nav>
+  
+  <section class="hero" data-aos="zoom-in">
+    <h2>تعلّم البرمجة والاختراق</h2>
+    <p>ابدأ رحلتك الآن مع أفضل دورات البرمجة، الحماية، والهكر باللغه العربيه</p>
+  </section>
+  
+  <section class="courses">
+  
+    <div class="course" data-aos="flip-right">
+      <img src="https://via.placeholder.com/400x180?text=Python+Course" alt="Python">
+      <div class="course-content">
+        <h3>دورة بايثون للمبتدئين</h3>
+        <p>تعلم أساسيات لغة Python وتطبيقاتها في الاختراق، تحليل البيانات، والذكاء الاصطناعي.</p>
+        <div class="price">100 دولار</div>
+      </div>
+      <a href="https://t.me/YOUSSEF_TRKE" class="btn">اشترك الآن</a>
+  
+    </div>
+  
+    <div class="course" data-aos="flip-left">
+      <img src="https://via.placeholder.com/400x180?text=Ethical+Hacking" alt="Hacking">
+      <div class="course-content">
+        <h3>الهكر الأخلاقي الشامل</h3>
+        <p>من الصفر حتى الاحتراف في تحليل الثغرات، اختبار الاختراق، وأدوات Kali Linux.</p>
+        <div class="price">120 دولار</div>
+      </div><a href="https://t.me/YOUSSEF_TRKE" class="btn">اشترك الآن</a>
+  
+    </div>
+  
+    <div class="course" data-aos="flip-up">
+      <img src="https://via.placeholder.com/400x180?text=Web+Development" alt="Web">
+      <div class="course-content">
+        <h3>برمجة مواقع الويب</h3>
+        <p>HTML, CSS, JavaScript, React — كل ما تحتاج لبناء مواقع احترافية ديناميكية.</p>
+        <div class="price">120 دولار</div>
+      </div>
+      <a href="https://t.me/YOUSSEF_TRKE" class="btn">اشترك الآن</a>
+  
+    </div>
+  
+    <div class="course" data-aos="flip-down">
+      <img src="https://via.placeholder.com/400x180?text=C%2B%2B+Course" alt="C++">
+      <div class="course-content">
+        <h3>دورة C++ المتقدمة</h3>
+        <p>تعلم برمجة C++ من الأساسيات حتى تقنيات OOP والخوارزميات المتقدمة، مناسبة للهاكر والمطورين.</p>
+        <div class="price">90 دولار</div>
+      </div>
+      <a href="https://t.me/YOUSSEF_TRKE" class="btn">اشترك الآن</a>
+  
+    </div>
+  
+    <div class="course" data-aos="flip-right">
+      <img src="https://via.placeholder.com/400x180?text=OSINT+Course" alt="OSINT">
+      <div class="course-content">
+        <h3>OSINT for Hackers</h3>
+        <p>تعلم جمع المعلومات المفتوحة OSINT وتوظيفها في التحقيقات الرقمية والأمن السيبراني.</p>
+        <div class="price">90 دولار</div>
+      </div>
+      <a href="https://t.me/YOUSSEF_TRKE" class="btn">اشترك الآن</a>
+  
+    </div>
+  
+    <div class="course" data-aos="zoom-in-up">
+      <img src="https://via.placeholder.com/400x180?text=Advanced+Pentesting" alt="Advanced Pentesting">
+      <div class="course-content">
+        <h3>Advanced Penetration Testing</h3>
+        <p>دورة احترافية للتعمق في اختبارات الاختراق، استغلال الثغرات المعقدة، واستخدام أدوات متقدمة في بيئات واقعية.</p>
+        <div class="price">110 دولار</div>
+      </div>
+      <a href="https://t.me/YOUSSEF_TRKE" class="btn">اشترك الآن</a>
+  
+    </div>
+  
+    <div class="course" data-aos="zoom-in-down">
+      <img src="https://via.placeholder.com/400x180?text=Social+Engineering" alt="Social Engineering">
+      <div class="course-content">
+        <h3>تعلم الهندسة الاجتماعية</h3>
+        <p>اكتشف تقنيات الإقناع والخداع المستخدمة في اختراق الأفراد والمؤسسات بطرق نفسية وذكية.</p>
+        <div class="price">90 دولار</div>
+      </div>
+      <a href="https://t.me/YOUSSEF_TRKE" class="btn">اشترك الآن</a>
+  
+    </div>
+  
+    <div class="course" data-aos="zoom-in">
+      <img src="https://via.placeholder.com/400x180?text=Reverse+Engineering" alt="Reverse Engineering">
+      <div class="course-content">
+        <h3>الهندسة العكسية</h3>
+        <p>تعلم تحليل البرامج، فك التشفير، وتتبع التعليمات البرمجية لاكتشاف الثغرات ونقاط الضعف الأمنية.</p>
+        <div class="price">90 دولار</div>
+      </div>
+      <a href="https://t.me/YOUSSEF_TRKE" class="btn">اشترك الآن</a>
+  
+    </div>
+  
+    <div class="course" data-aos="fade-up">
+      <img src="https://via.placeholder.com/400x180?text=Reverse+Firewall" alt="Reverse Firewall">
+      <div class="course-content">
+        <h3>دورة الجدار العكسي</h3>
+        <p>تعلم كيفية إنشاء واستخدام الجدار العكسي لتجاوز جدران الحماية، والتحكم الآمن عن بُعد عبر الشبكات.</p>
+        <div class="price">120 دولار</div>
+      </div>
+      <a href="https://t.me/YOUSSEF_TRKE" class="btn">اشترك الآن</a>
+  
+    </div>
+    
+    <div class="course" data-aos="fade-up">
+      <img src="https://via.placeholder.com/400x180?text=Reverse+Firewall" alt="Reverse Firewall">
+      <div class="course-content">
+        <h3>دورة امن سيراني</h3>
+        <p>احترف حماية الأنظمة والشبكات واكتشف كيفية التصدي للهجمات الإلكترونية بشكل احترافي.</p>
+        <div class="price">800 دولار</div>
+      </div>
+      <a href="https://t.me/YOUSSEF_TRKE" class="btn">اشترك الآن</a>
+  
+    </div>
+    
+  
+  </section>
+  
+  <footer data-aos="fade-up">
+    جميع الحقوق محفوظة © 2025 - أكاديمية يوسف التركي
+  </footer>
+  
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+  </script>
+  
+  </body>
+  </html>
